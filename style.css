@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    --left: #e38826;
+    --left-hover: #c16604;
+    --middle: #006970;
+    --right: #004241;
+    --white: rgb(255, 255, 255);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 28rem;
+    max-width: 50rem; 
+    margin: auto;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.box {
+    padding: 2.7rem;
+}
+
+
+.left-container {
+    width: 33.3%;
+    background-color: var(--left);
+}
+
+.left-container .information-button {
+    color: var(--left);
+}
+
+.left-container .information-button:hover {
+    background-color: var(--left);
+}
+
+
+.middle-container {
+    width: 33.3%;
+    background-color: var(--middle);
+}
+
+.middle-container .information-button {
+    color: var(--middle);
+}
+
+.middle-container a .information-button:hover {
+    background-color: var(--middle);
+}
+
+
+.right-container {
+    width: 33.3%;
+    background-color: var(--right);
+}
+
+.right-container .information-button {
+    color: var(--right);
+}
+
+.right-container .information-button:hover {
+    background-color: var(--right);
+}
+
+
+.car-type-icon {
+    width: 55px;
+    margin-bottom: 1.5rem;
+}
+
+.car-type {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-weight: 700; 
+    color: var(--white);
+    letter-spacing: .7px;
+    margin-bottom: 1.3rem;
+}
+
+.car-description {
+    color: var(--white);
+    font-family: 'Lexend Deca', sans-serif; 
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 5rem;
+}
+
+.information-button {
+    width: 8rem;
+    height: 2.5rem;
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    color: var(--white);
+    font-family: 'Lexend Deca', sans-serif; 
+    font-weight: 400;
+    background-color: var(--white);
+}
+
+a .information-button:hover{
+    cursor: pointer;
+    color: white;
+    transition: all 0.15s linear;
+}
+
+
+@media only screen and (max-width: 836px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40rem;
+        height: auto; 
+        margin: 5rem 2rem;
+    }
+
+    .left-container {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .middle-container {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .right-container {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .car-description {
+        margin-bottom: 1.3rem;
+    }
+        
+}
+
+@media only screen and (max-width: 660px) {
+   
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 15rem;
+        height: 75rem; 
+        margin: 5rem 2rem;
+    }
+
+    .left-container {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .middle-container {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .right-container {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .car-description {
+        margin-bottom: 1.3rem;
+    }
+}
+
+
+footer {
+    margin-top: 3rem;
+}
+
+attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
